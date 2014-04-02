@@ -1,15 +1,19 @@
 require 'sinatra'
 
-get '/contacts/:id'
-  erb :id
-end
-
 get '/contacts/new' do
   erb :new
 end
 
 get '/contacts' do
   erb :contacts
+end
+
+get '/contacts/edit' do
+  erb :edit
+end
+
+get '/contacts/:id' do
+  erb :id
 end
 
 get '/' do
