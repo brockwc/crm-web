@@ -1,4 +1,5 @@
 require './contact.rb'
+require './rolodex.rb'
 require 'sinatra'
 
 
