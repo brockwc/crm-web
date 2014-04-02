@@ -1,4 +1,7 @@
+require './contact.rb'
 require 'sinatra'
+
+
 
 get '/contacts/new' do
   erb :new
