@@ -1,5 +1,13 @@
 require 'sinatra'
 
+get '/contacts/:id'
+  erb :id
+end
+
+get '/contacts/new' do
+  erb :new
+end
+
 get '/contacts' do
   erb :contacts
 end
