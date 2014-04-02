@@ -2,18 +2,13 @@ require './contact.rb'
 require './rolodex.rb'
 require 'sinatra'
 
-
+@@rolodex = Rolodex.new
 
 get '/contacts/new' do
   erb :new
 end
 
-get '/contacts' do
-  @contacts = []
-  @contacts << Contact.new("Brock", "Whitbread", "brock.whitbread@gmail.com", "note note")
-  @contacts << Contact.new("Isobel", "Cole", "isobelcole@gmail.com", "note note note")
-  @contacts << Contact.new("Bill", "Cole", "stubborndad@yahoo.com", "note note note")
-
+get '/contacts' do 
   erb :contacts
 end
 
