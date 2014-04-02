@@ -24,3 +24,10 @@ get '/' do
   @crm_app_name = "Brock's CRM"
   erb :index
 end
+
+post '/contacts' do
+  puts params
+  contact = Contact.new(params[:first_name], params[:last_name], params[:email], params[:note])
+  @@rolodex.add(contact)
+  redirect to('/contacts')
+end
