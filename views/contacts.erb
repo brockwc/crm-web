@@ -2,12 +2,13 @@
 
 
 <% @@rolodex.contacts.each do |contact| %>
-ID #: <%= contact.id %>
+<p>ID #: <%= contact.id %>
 <br />
-Name: <%= contact.first_name %> <%= contact.last_name %>
+Name: <a href="/contacts/<%= contact.id %>"><%= contact.first_name %> <%= contact.last_name %></a>
 <br />
 Email: <%= contact.email %>
-<br />
+<br /></p>
 Note: <%= contact.note %>
-  <br />
+<br />
+<hr width="40%" align=left>
 <% end %> 

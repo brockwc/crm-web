@@ -54,11 +54,15 @@ nav ul a {
   color: #0081B2;  
 }
 
+nav ul a:hover {
+  background-color: #B25D00;
+}
+
 a {
   text-decoration: none;
 }
 
 h1 {
-  font-size: 1rem;
+  font-size: 1.25rem;
   
 }

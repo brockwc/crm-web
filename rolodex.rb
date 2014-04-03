@@ -14,7 +14,7 @@ class Rolodex
   end
 
   def remove(id)
-    @contacts.delete_if { |a| a.id == id }
+    @contacts.delete(id)
   end
 
   def edit_menu
