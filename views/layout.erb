@@ -2,11 +2,21 @@
 
 <html>
   <head>
-    <title></title>
+    <title>The Only CRM - <%= yield_content :title %></title>
+    <link rel="stylesheet" type="text/css" href="/stylesheet.css">
   </head>
 
   <body>
+    <div id="header">The Only CRM</div>
+    <nav>
+      <ul>
+        <li><a href="/contacts/new">Add new contact</a></li>
+        <li><a href="/contacts">View all contacts</a></li>
+        <li><a href="/contacts/edit">Edit a contact</a></li>
+      </ul>
+    </nav>
     <%= yield %>
+    <div id="footer"><a href="index.erb">Go Home</a></div>
   </body>
 
 </html>

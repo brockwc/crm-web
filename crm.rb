@@ -1,6 +1,8 @@
 require './contact.rb'
 require './rolodex.rb'
 require 'sinatra'
+require "sinatra/content_for"
+
 
 @@rolodex = Rolodex.new
 
