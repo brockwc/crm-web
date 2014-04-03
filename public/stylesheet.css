@@ -1,54 +1,108 @@
-body {
+/*   Base Rules *******************************************************/
+* {
+  box-sizing: border-box;
+}
+
+html {
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
-#header {
-  background-color: #0081B2;
+body {
+  background-color: #8A8A8A;
+  margin: 0;
+  position: relative;
+  left: 30%;
+  top: 150px;
+}
+
+form {
+  padding-left: 3rem;
+}
+
+input, textarea {
+  width: 30%;
+  border: 1px dotted #999;
   border-radius: 5px;
-  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+h2 {
+
+}
+
+/*   Layout Rules *****************************************************/
+
+
+header {
+  font-size: 1.25rem;
+  font-weight: bold;
   height: 25%;
   width: 40%;
-  color: #FFF;
   text-align: center;
+  margin: 2.5px;
+  padding: 20px;
+  border: 1px dashed black;
+  background-color: #FF7071;
+
 }
 
-#footer {
-  background-color: #0081B2;
-  border-radius: 5px;
-  margin-top: 5px;
-  padding: 10px;
-  height: 25%;
-  width: 40%;
-  text-align: center;
-}
-
-#footer a {
-  color: #FFF;
-}
-
-#form {
-  background-color: #B0E9FF;
-  border-radius: 5px;
-  margin-top: 5px;
-  padding: 10px;
+footer {
   height: 25%;
   width: 40%;
 }
 
 nav {
-  background-color: #B0E9FF;
-  border-radius: 5px;
-  margin-top: 5px;
-  padding: 10px;
   height: 25%;
   width: 40%;
   color: #FFF;
   text-align: left;
 }
 
-nav ul {
-  list-style-type: none;
+.title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  height: 25%;
+  width: 40%;
+  text-align: center;
+  margin: 2.5px;
+  padding: 20px;
+  border: 1px dashed black;
+  background-color: #FF9A1A;
+
 }
+
+
+
+
+
+
+/*
+
+
+
+
+#footer a {
+  color: #FFF;
+}
+
+
+
+
+
 
 nav ul a {
   color: #0081B2;  
@@ -58,11 +112,3 @@ nav ul a:hover {
   background-color: #B25D00;
 }
 
-a {
-  text-decoration: none;
-}
-
-h1 {
-  font-size: 1.25rem;
-  
-}
