@@ -6,6 +6,13 @@ require "sinatra/content_for"
 
 @@rolodex = Rolodex.new
 
+@@rolodex.add(Contact.new("Brock", "Whitbread", "brock.whitbread@gmail.com", "The New Guy"))
+
+get "/contacts/1000" do
+  @contact = @@rolodex.find(1000)
+  erb :show_contact
+end
+
 get '/contacts/new' do
   erb :new
 end
